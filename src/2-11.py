@@ -6,5 +6,5 @@ class Solution:
             self.nums[ele].append(indx)  # 각 원소에 대해 해당 인덱스 위치를 추가한다.
 
     def pick(self, target: int) -> int:
-        # Python 함수 random.choice() 호출한다.
+        # Python 함수 random.choice()를 호출한다.
         return random.choice(self.nums[target])

@@ -18,8 +18,8 @@ class Solution:
 
             # 해당 누적합을 유지하면서 현재 누적을 삽입한다.
             # 뒤쪽이 더 큰 원소여야 하고 q는 오름차순이 되어야 한다.
-            while q and q[-1][1] >= cumsum:  # 이전 예시의 3단계 부분 적용, 가장 마지막에 있는 수가 cumsum보다 크면
-                q.pop()  # 가장 뒷 숫자를 뺀다.
+            while q and q[-1][1] >= cumsum:  # 예시의 3단계 부분
+                q.pop()  # 가장 마지막에 있는 수가 cumsum보다 크면 가장 뒤 숫자를 뺀다.
             q.append((j, cumsum))
 
         return -1 if min_size == float("inf") else min_size

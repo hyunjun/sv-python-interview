@@ -29,7 +29,7 @@ class Solution:
                     ls[0].isnumeric() and ls[1].isnumeric()
                 )  # 소수점 앞, 뒤 모두 유효한 숫자라면 반환
 
-    def decide_pow(self, s):  # 거듭제곱 부분은 “부호 + 숫자”형태만 가능, 소수점은 사용 불가
+    def decide_pow(self, s):  # 거듭제곱 부분은 부호 + 숫자 형태만 가능, 소수점은 사용 불가
         if not s:
             return False
         if s[0] in ["+", "-"]:

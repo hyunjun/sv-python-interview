@@ -23,7 +23,7 @@ def reverse(arr, start, end):
 
 
 class Solution:
-    def nextPermutation(self, nums: List[int]) -> None:
+    def nextPermutation(self, nums: list[int]) -> None:
         if len(nums) < 2:
             return
         # 첫 번째 내림차순 인덱스 찾기

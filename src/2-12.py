@@ -1,4 +1,4 @@
-# Array 중 에서 k개 원소를 무작위로 선택한다.
+# Array 중에서 k개 원소를 무작위로 선택한다.
 import random
 
 
@@ -21,7 +21,7 @@ def selectKItems(stream, n, k):
         while i < n:
             # 0부터 i까지의 원소 중 임의의 인덱스를 선택한다.
             j = random.randrange(i + 1)
-            # 무작위로 선택한 인덱스가 k보다 작으면 인덱스의 원소를 stream의 새 원소로 바꾼다.
+            # 무작위로 선택한 인덱스가 k보다 작으면 인덱스의 원소를 stream의 새 원소로 바꿈
             if j < k:
                 reservoir[j] = stream[i]
             i += 1

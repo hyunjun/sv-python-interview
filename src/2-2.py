@@ -13,7 +13,7 @@ print(List)
 
 # 반복문을 사용하여 리스트에 원소를 추가한다.
 for i in range(1, 4):
- List.append(i)
+    List.append(i)
 print("\nList after Addition of elements from 1-3: ")
 print(List)
 

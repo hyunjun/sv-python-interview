@@ -13,11 +13,11 @@ class Solution(object):
                 element_a = a[i]  # a위치의 문자열 값을 가져온다.
             if abs(i) <= abs(len_b):
                 element_b = b[i]  # b위치의 문자열 값을 가져온다.
-            # 문자열 a와 b의 값과 캐리를 더한다.
+            # 문자열 a와 b의 값과 carry를 더한다.
             add = int(element_a) + int(element_b) + int(carry)
             value = add % 2  # 현재 위치의 나머지
             carry = add // 2  # 올림값
             new_str.insert(0, str(value))  # 새 문자열의 시작 부분에 새로 생성된 값을 삽입한다.
-        if carry != 0:  # 마지막으로 캐리 플래그가 0이 아닌 경우를 주의한다.
+        if carry != 0:  # 마지막으로 carry 플래그가 0이 아닌 경우를 주의한다.
             new_str.insert(0, str(carry))
         return ''.join(new_str)
