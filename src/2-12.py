@@ -27,9 +27,10 @@ def selectKItems(stream, n, k):
             i += 1
         print("Following are k randomly selected items")
     printArray(reservoir, k)
-    # main 함수
-    if __name__ == "__main__":
-        stream = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-        n = len(stream)
-        k = 5
-        selectKItems(stream, n, k)
+    
+# main 함수
+if __name__ == "__main__":
+    stream = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    n = len(stream)
+    k = 5
+    selectKItems(stream, n, k)
