@@ -1,3 +1,7 @@
+from collections import defaultdict
+import random
+
+
 class RandomizedSet:
     def __init__(self):
         # 데이터 구조 초기화
@@ -5,7 +9,8 @@ class RandomizedSet:
         self.table = defaultdict()
 
     def insert(self, val: int) -> bool:
-        # 해시테이블에 값을 삽입하고, 해시테이블에 지정된 원소가 이미 포함되어 있으면 True를 반환한다.
+        # 해시 테이블에 값을 삽입하고,
+        # 해시 테이블에 지정된 원소가 이미 포함되어 있으면 True를 반환한다.
         if val in self.table:
             return False
         self.data.append(val)
@@ -13,7 +18,8 @@ class RandomizedSet:
         return True
 
     def remove(self, val: int) -> bool:
-        # 해시테이블에서 값을 제거하고 해시테이블에 지정된 요소가 포함되어 있으면 True를 반환한다.
+        # 해시 테이블에서 값을 제거하고,
+        # 해시 테이블에 지정된 요소가 포함되어 있으면 True를 반환한다.
         # 마지막 원소와 교환하는 데 사용되는 삭제된 원소의 인덱스를 가져온다.
         removed_idx, last_idx = self.table[val], len(self.data) - 1
         item = self.data[last_idx]
