@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class LRUCache:
     def __init__(self, capacity: int) -> None:
         self.capacity = capacity
@@ -21,7 +24,8 @@ class LRUCache:
             return
 
         if len(self.items) == self.capacity:
-            # deque의 popleft 함수의 시간 복잡도는 O(1)이지만, 리스트에서 최악의 경우 삭제는 O(n)시간이 될 수 있다.
+            # deque의 popleft 함수의 시간 복잡도는 O(1)이지만,
+            # 리스트에서 최악의 경우 삭제는 O(n)시간이 될 수 있다.
             del self.items[self.list.popleft()]
 
         self.list.append(key)
