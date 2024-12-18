@@ -6,7 +6,7 @@ class Node:
 
 
 class Solution:
-    def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:
+    def exclusiveTime(self, n: int, logs: list[str]) -> list[int]:
         nodes = []
         stk = []
         res = [0] * n
