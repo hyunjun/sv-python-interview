@@ -1,6 +1,6 @@
 class NumMatrix:
     def __init__(self, matrix: list[list[int]]):
-        if len(matrix) == 0 or len(matrix[0]):
+        if len(matrix) == 0 or len(matrix[0]) == 0:
             return
         M, N = len(matrix), len(matrix[0])
         self.dp = [[0] * (M + 1) for _ in range(N + 1)]
