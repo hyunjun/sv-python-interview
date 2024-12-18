@@ -1,9 +1,8 @@
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
-    def subarraySum(self, nums: List[int], K: int) -> int:
+    def subarraySum(self, nums: list[int], K: int) -> int:
         table = defaultdict(int)
         res, presum = 0, 0
         table[0] = 1
