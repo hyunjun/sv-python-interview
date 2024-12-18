@@ -4,15 +4,15 @@ class Solution(object):
         len_b = len(b)  # 문자열 b의 길이
         # 둘 중 어느 것이 더 긴지 비교
         max_length = max(len_a, len_b)
-        carry = 0  # carry값 초기화
+        carry = 0  # carry 값 초기화
         new_str = []
         for i in range(-1, -max_length - 1, -1):  # 문자열을 오른쪽에서 왼쪽으로 탐색
             element_a = 0
             element_b = 0
             if abs(i) <= abs(len_a):
-                element_a = a[i]  # a위치의 문자열 값을 가져온다.
+                element_a = a[i]  # a 위치의 문자열값을 가져온다.
             if abs(i) <= abs(len_b):
-                element_b = b[i]  # b위치의 문자열 값을 가져온다.
+                element_b = b[i]  # b 위치의 문자열값을 가져온다.
             # 문자열 a와 b의 값과 carry를 더한다.
             add = int(element_a) + int(element_b) + int(carry)
             value = add % 2  # 현재 위치의 나머지
