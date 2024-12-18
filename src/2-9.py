@@ -3,7 +3,7 @@ class NumMatrix:
         if len(matrix) == 0 or len(matrix[0]) == 0:
             return
         M, N = len(matrix), len(matrix[0])
-        self.dp = [[0] * (M + 1) for _ in range(N + 1)]
+        self.dp = [[0] * (N + 1) for _ in range(M + 1)]
         for r in range(M):
             for c in range(N):
                 self.dp[r][c + 1] = self.dp[r][c] + matrix[r][c]  # 1차원 배열을 사용해 풀기
