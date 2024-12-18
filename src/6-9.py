@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def subarraySum(self, nums: List[int], K: int) -> int:
+    def subarraySum(self, nums: list[int], K: int) -> int:
         if K < 0:
             return 0
         j, sum, ans = 0, 0, 0
