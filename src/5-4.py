@@ -1,10 +1,9 @@
 import heapq
-from typing import List
 
 
 class Solution:
     def mincostToHireWorkers(
-        self, quality: List[int], wage: List[int], K: int
+        self, quality: list[int], wage: list[int], K: int
     ) -> float:
         wq = sorted([(a / b, b) for (a, b) in zip(wage, quality)])
         res = float("inf")
