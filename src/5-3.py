@@ -7,5 +7,5 @@ customers.put((3, "Charles"))
 customers.put((1, "Riya"))
 customers.put((4, "Stacy"))
 while customers:
-    print(customers.get())
     # Riya, Harry, Charles, Stacy 순으로 이름을 출력한다.
+    print(customers.get())
