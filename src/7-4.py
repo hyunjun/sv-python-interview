@@ -11,7 +11,7 @@ set3 = set1.intersection(set2)
 print("Intersection using intersection() function")
 print(set3)
 
-# "&"를 사용하여 교집합 구하기
+# '&'를 사용하여 교집합 구하기
 set3 = set1 & set2
 print("\nIntersection using '&' operator")
 print(set3)
