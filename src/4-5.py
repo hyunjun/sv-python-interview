@@ -1,9 +1,8 @@
 from collections import deque
-from typing import List
 
 
 class Solution:
-    def shortestSubarray(self, A: List[int], K: int) -> int:
+    def shortestSubarray(self, A: list[int], K: int) -> int:
         q = deque()
         q.append((-1, 0))  # 1단계
         min_size = float("inf")
