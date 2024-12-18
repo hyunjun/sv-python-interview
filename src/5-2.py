@@ -6,5 +6,5 @@ heapq.heappush(customers, (3, "Charles"))
 heapq.heappush(customers, (1, "Riya"))
 heapq.heappush(customers, (4, "Stacy"))
 while customers:
+    # Riya, Harry, Charles, Stacy 순으로 출력한다.
     print(heapq.heappop(customers))
-    # 해당 순서대로 이름을 출력한다: Riya, Harry, Charles, Stacy.
