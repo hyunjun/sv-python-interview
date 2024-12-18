@@ -1,9 +1,8 @@
 import heapq
-from typing import List
 
 
 class Solution:
-    def isPossible(self, nums: List[int]) -> bool:
+    def isPossible(self, nums: list[int]) -> bool:
         heaps = {}
         # 우선순위 큐의 원소를 미리 정의
         for n in range(nums[0] - 1, nums[-1] + 1):
