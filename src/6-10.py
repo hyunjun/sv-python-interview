@@ -1,10 +1,9 @@
-from typing import List
 import collections
 
 
 class Solution:
     def largestValsFromLabels(
-        self, values: List[int], labels: List[int], num_wanted: int, use_limit: int
+        self, values: list[int], labels: list[int], num_wanted: int, use_limit: int
     ) -> int:
         # 값과 라벨을 묶고 가장 큰 값이 끝에 오도록 값을 오름차순으로 정렬한다.
         # 각 라벨이 사용된 횟수를 추적한다.
