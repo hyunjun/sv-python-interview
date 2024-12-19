@@ -1,5 +1,5 @@
 class Solution:
-    def preorderTraversal(self, root):  # 전위순회
+    def preorderTraversal(self, root):  # 전위 순회
         stack = []
         sol = []
         curr = root
