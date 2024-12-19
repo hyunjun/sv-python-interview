@@ -2,7 +2,7 @@ from queue import Queue
 
 
 class Solution:
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    def levelOrder(self, root: TreeNode) -> list[list[int]]:
         result = []
         if root is None:
             return []
