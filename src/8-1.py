@@ -1,7 +1,7 @@
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         def fn(node):  # 문자열을 숫자로 변환하는 함수 정의
-            """링크 리스트를 표시하는 반환 숫자"""
+            """연결 리스트를 표시하는 반환 숫자"""
             ans = 0
             while node:
                 ans = 10 * ans + node.val
