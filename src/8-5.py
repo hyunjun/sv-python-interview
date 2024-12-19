@@ -16,9 +16,9 @@ class Solution:
 
             # 다음 가리키는 노드가 있다면,
             if curr.next is not None:
-                # 다음 가리키는 노드가 해시테이블에 없다면(방문하지 않은 노드라면),
+                # 다음 가리키는 노드가 해시 테이블에 없다면(방문하지 않은 노드라면),
                 if curr.next not in table:
-                    # 복사본에 복사하고 해시테이블에 기록한다.
+                    # 복사본에 복사하고 해시 테이블에 기록한다.
                     copy.next = Node(curr.next.val)
                     table[curr.next] = copy.next
                 # 이미 방문한 노드라면, 복사본에 업데이트한다.
