@@ -21,7 +21,7 @@ class BIT:
 
 
 class Solution:
-    def countRangeSum(self, nums: List[int], lower: int, upper: int) -> int:
+    def countRangeSum(self, nums: list[int], lower: int, upper: int) -> int:
         if not nums:
             return 0
         presum = 0
