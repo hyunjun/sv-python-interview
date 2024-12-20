@@ -1,6 +1,6 @@
 class Solution:
     def maxPathSum(self, root: "TreeNode") -> int:
-        best_sum = -float("inf")  # 최대경로합 기록 변수
+        best_sum = -float("inf")  # 최대 경로합 기록 변수
 
         def maxPath(v: "vertex"):  # 보조 함수 정의
             nonlocal best_sum  # 최대 경로 합을 추적하는 변수
