@@ -29,6 +29,6 @@ class Solution:
         for index in indexes[::-1]:
             # 인덱스 왼쪽에 있는 모든 항목에 대한 합계
             output.append(bit.sum_query(index - 1))
-            # 이 인덱스까지 발생 카운터 업데이트
+            # 이 인덱스까지 발생한 카운터 업데이트
             bit.update(index, 1)
         return output[::-1]
