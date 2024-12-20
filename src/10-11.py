@@ -18,7 +18,7 @@ class BIT:
 
 
 class Solution:
-    def countSmaller(self, nums: List[int]) -> List[int]:
+    def countSmaller(self, nums: list[int]) -> list[int]:
         # 숫자가 고유하고 정렬된 경우 숫자의 인덱스 위치를 확인하자.
         e2index = {e: i for i, e in enumerate(sorted(set(nums)))}
         bit = BIT(e2index)
