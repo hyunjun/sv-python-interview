@@ -89,7 +89,7 @@ class SegmentTree:
 
     def update_segment_tree(self, head, index, new_value, array):
         """
-        세그먼트 트리 노드 값을 업데이트한다.
+        세그먼트 트리 노드값을 업데이트한다.
         세그먼트 트리의 헤드 노드를 반환한다.
         """
         if index == head.leftEdge == head.rightEdge:
@@ -117,8 +117,8 @@ class SegmentTree:
 
     def get_minimum(self, head, left, right):
         """
-        주어진 범위 조회의 최소값을 얻는다.
-        주어진 범위 조회에 대한 최소값을 반환한다.
+        주어진 범위 조회의 최솟값을 얻는다.
+        주어진 범위 조회에 대한 최솟값을 반환한다.
 
         """
         overlap = self.get_overlap(head.leftEdge, head.rightEdge, left, right)
@@ -134,8 +134,8 @@ class SegmentTree:
 
     def get_maximum(self, head, left, right):
         """
-        주어진 범위 조회의 최대값을 얻는다.
-        주어진 범위 조회에 대한 최대값을 반환한다.
+        주어진 범위 조회의 최댓값을 얻는다.
+        주어진 범위 조회에 대한 최댓값을 반환한다.
         """
         overlap = self.get_overlap(head.leftEdge, head.rightEdge, left, right)
         if overlap == self.complete_overlap:
