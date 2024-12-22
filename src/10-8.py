@@ -42,7 +42,7 @@ class Solution:
         )
 
     # prefix-sum + SegmentTree | O(nlogn)
-    def countRangeSum(self, nums: List[int], lower: int, upper: int) -> int:
+    def countRangeSum(self, nums: list[int], lower: int, upper: int) -> int:
         cumsum = [0]
         for n in nums:
             cumsum.append(cumsum[-1] + n)
