@@ -1,3 +1,6 @@
+import collections
+
+
 class Solution(object):
     def validTree(self, n, edges):
         lookup = collections.defaultdict(list)
