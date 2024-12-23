@@ -7,7 +7,7 @@ class Solution:
         for i in edges:  # 각 가장자리를 통과
             root1 = self.find(root, i[0])
             root2 = self.find(root, i[1])
-            if root1 == root2:  # 이 에지의 두 점이 연결되어 있음을 나타낸다.
+            if root1 == root2:  # 이 간선의 두 점이 연결되어 있음을 나타낸다.
                 return False
             else:
                 root[root1] = root2
