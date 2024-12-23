@@ -1,9 +1,9 @@
 class Solution:
-    def longestOnes(self, A: List[int], K: int) -> int:
+    def longestOnes(self, A: list[int], K: int) -> int:
         max_len = -1
         # 이중 포인트 정의
         left, right = 0, 0
-        # 전환 수량(filp) 정의
+        # 전환 수량(flip) 정의
         flip = 0
         for right, item in enumerate(A):
             if item == 0:
