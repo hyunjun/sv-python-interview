@@ -22,7 +22,7 @@ class Solution(object):
         if visited[curr]:  # 노드를 방문한 경우 False를 반환한다.
             return False
         visited[curr] = True  # 현재 방문한 노드를 방문했음을 기록
-        for i in lookup[curr]:  # 현재 노드의 다음 방문 노드를 확인한다
+        for i in lookup[curr]:  # 현재 노드의 다음 방문 노드를 확인한다.
             if i != parent and not self.helper(i, curr, lookup, visited):
                 return False
 
