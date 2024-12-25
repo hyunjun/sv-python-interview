@@ -2,7 +2,7 @@ from collections import deque
 
 
 class Solution:
-    def pacificAtlantic(self, matrix: List[List[int]]) -> List[List[int]]:
+    def pacificAtlantic(self, matrix: list[list[int]]) -> list[list[int]]:
         if not matrix:
             return []
         pacificSeen = set()
