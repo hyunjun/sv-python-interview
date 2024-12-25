@@ -1,4 +1,4 @@
-def GetTopKGroups(self, circles: List[Circle], top_k: int) -> List[List[Circle]]:
+def GetTopKGroups(self, circles: list[Circle], top_k: int) -> list[list[Circle]]:
     """원 목록이 주어지면 가장 큰 k개의 원 그룹을 반환한다."""
     visited = set()
     size_and_groups = []
