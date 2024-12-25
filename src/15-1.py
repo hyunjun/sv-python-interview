@@ -1,5 +1,5 @@
 class Solution:
-    def pacificAtlantic(self, matrix: List[List[int]]) -> List[List[int]]:
+    def pacificAtlantic(self, matrix: list[list[int]]) -> list[list[int]]:
         if not matrix or not matrix[0]:
             return []
         R, C = len(matrix), len(matrix[0])
@@ -18,4 +18,4 @@ class Solution:
             dfs(r, c, pacific)
         for r, c in [(r, C - 1) for r in range(R)] + [(R - 1, c) for c in range(C)]:
             dfs(r, c, atlantic)
-        return pacific & atlantic
+        return list(pacific & atlantic)
