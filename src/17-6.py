@@ -1,5 +1,5 @@
 class Solution:
-    def isBipartite(self, graph: List[List[int]]) -> bool:
+    def isBipartite(self, graph: list[list[int]]) -> bool:
         size = len(graph)
         q = deque()
         visited = {}
