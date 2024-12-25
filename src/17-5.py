@@ -1,9 +1,9 @@
 class Solution:
-    def numBusesToDestination(self, routes: List[List[int]], S: int, T: int) -> int:
+    def numBusesToDestination(self, routes: list[list[int]], S: int, T: int) -> int:
         if S == T:
             return 0
         stop_bus = collections.defaultdict(list)
-        # 각 정류장에 해당하는 버스 노선을 저장하는데 사용된다.
+        # 각 정류장에 해당하는 버스 노선을 저장하는 데 사용된다.
         for i, route in enumerate(routes):
             for stop in route:
                 stop_bus[stop].append(i)
