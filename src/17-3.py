@@ -1,7 +1,7 @@
 class Solution:
     def wallsAndGates(self, rooms):
         """
-        :type rooms: List[List[int]]
+        :type rooms: list[list[int]]
         """
         if not rooms:
             return
