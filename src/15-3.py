@@ -1,5 +1,5 @@
 class Solution:
-    def addOperators(self, num: str, target: int) -> List[str]:
+    def addOperators(self, num: str, target: int) -> list[str]:
         res = []
         self.target = target
 
@@ -12,7 +12,8 @@ class Solution:
         # fstr은 현재 표현식이다.
         # fval은 현재 표현식의 값이다.
         # flast는 마지막으로 연산된 숫자 또는 피연산자의 값이다.
-        # 예를 들어, fstr=2+3이면 flast=3이고, fstr=2-3이면 flast=-3이고, fstr=2+3*4이면 flast=3*4=12이다
+        # 예를 들어, fstr=2+3이면 flast=3이고, fstr=2-3이면
+        # flast=-3이고, fstr=2+3*4이면 flast=3*4=12이다
 
         if not num:
             if fval == self.target:
