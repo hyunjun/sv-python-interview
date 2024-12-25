@@ -21,6 +21,6 @@ class Solution:
                     and 0 <= new_y < col
                     and rooms[new_x][new_y] == 2147483647
                 ):
-                    # 업데이트 값
+                    # 값 업데이트
                     rooms[new_x][new_y] = distance
                     q.append((new_x, new_y))
