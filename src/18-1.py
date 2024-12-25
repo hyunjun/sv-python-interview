@@ -5,7 +5,6 @@ from collections import defaultdict
 
 
 class Graph:
-
     def __init__(self, vertices):
         self.V = vertices  # 정점 수
         self.graph = defaultdict(list)  # 그래프를 저장하는 딕셔너리
@@ -30,11 +29,12 @@ class Graph:
     # 주어진 그래프에 루프가 포함되어 있는지 확인한다.
     def isCyclic(self):
 
-        # V 하위 집합을 생성하고 모든 하위 집합을 단일 요소 집합으로 초기화하기 위해 메모리를 할당한다.
+        # V 하위 집합을 생성하고 모든 하위 집합을 단일 요소 집합으로 초기화하기 위해
+        # 메모리를 할당한다.
         parent = [-1]*(self.V)
 
         # 그래프의 모든 모서리를 탐색하고 각 모서리에 대한 두 꼭짓점의 하위 집합을 찾는다.
-    # 두 부분 집합이 동일하면 그래프에 순환이 있다.
+        # 두 부분 집합이 동일하면 그래프에 순환이 있다는 의미이다.
         for i in self.graph:
             for j in self.graph[i]:
                 x = self.find_parent(parent, i)
@@ -42,15 +42,3 @@ class Graph:
                 if x == y:
                     return True
                 self.union(parent, x, y)
-
-
-# 그래프 만들기
-g = Graph(3)
-g.addEdge(0, 1)
-g.addEdge(1, 2)
-g.addEdge(2, 0)
-
-if g.isCyclic():
-    print("Graph contains cycle")
-else:
-    print("Graph does not contain cycle")
