@@ -1,5 +1,5 @@
 class Solution:
-    def findAnagrams(self, s: str, p: str) -> List[int]:
+    def findAnagrams(self, s: str, p: str) -> list[int]:
         # 두 개의 해시 테이블 정의
         p_counter = Counter(p)
         s_counter = Counter()
