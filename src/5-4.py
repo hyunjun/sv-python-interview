@@ -1,6 +1,3 @@
-import heapq
-
-
 class Solution:
     def mincostToHireWorkers(
         self, quality: list[int], wage: list[int], K: int

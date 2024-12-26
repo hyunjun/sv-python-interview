@@ -30,11 +30,3 @@ class Solution:
                     res[stk[-1].id] -= time_duration
 
         return res
-
-
-if __name__ == "__main__":
-    exclusive = Solution()
-    logs = ["0:start:0", "1:start:2", "1:end:5", "0:end:6"]
-    n = 2
-    res = exclusive.exclusiveTime(n, logs)
-    print(res)
