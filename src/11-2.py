@@ -1,6 +1,3 @@
-from collections import defaultdict
-
-
 class Solution:
     def cloneGraph(self, node: "Node") -> "Node":
         if node is None:
