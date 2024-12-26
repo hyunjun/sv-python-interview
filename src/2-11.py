@@ -1,9 +1,5 @@
-import collections
-import random
-
-
 class Solution:
-    def __init__(self, nums: List[int]):
+    def __init__(self, nums: list[int]):
         # 각 원소의 인덱스 위치를 저장하는 해시 테이블을 만든다.
         self.nums = collections.defaultdict(list)
         for indx, ele in enumerate(nums):  # 리스트 탐색
