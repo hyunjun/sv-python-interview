@@ -1,6 +1,3 @@
-import collections
-
-
 class Solution:
     def largestValsFromLabels(
         self, values: list[int], labels: list[int], num_wanted: int, use_limit: int
