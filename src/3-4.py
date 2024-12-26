@@ -1,6 +1,3 @@
-from collections import deque
-
-
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         stk = deque()
@@ -25,20 +22,3 @@ class Solution:
                 res += s[i]
 
         return res
-
-
-if __name__ == "__main__":
-    object = Solution()
-    s1 = "lee(t(c)o)de)"
-    print(
-        "origin string {} --> final string {}".format(
-            s1, object.minRemoveToMakeValid(s1)
-        )
-    )
-
-    s2 = "a)b(c)d"
-    print(
-        "origin string {} --> final string {}".format(
-            s2, object.minRemoveToMakeValid(s2)
-        )
-    )
