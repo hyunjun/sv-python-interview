@@ -1,4 +1,4 @@
-# 숫자 리스트 만들기(중복 값 포함)
+# 숫자 리스트 만들기(중복값 포함)
 List = [1, 2, 4, 4, 3, 3, 3, 6, 5]
 print("\nList with the use of Numbers: ")
 print(List)
