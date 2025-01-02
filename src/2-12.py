@@ -9,7 +9,7 @@ def printArray(stream, n):
     print()
 
 
-# Array [0..n-1]에서 k 개의 원소를 무작위로 추출하는 함수 구현
+# Array [0..n-1]에서 k개의 원소를 무작위로 추출하는 함수 구현
 def selectKItems(stream, n, k):
     i = 0
     # reservoir[]는 stream[]의 k개 원소 길이의 0으로 초기화된 배열
