@@ -1,6 +1,3 @@
-import collections
-
-
 class Solution(object):
     def validTree(self, n, edges):
         if len(edges) != n - 1:  # 간선의 개수 체크
