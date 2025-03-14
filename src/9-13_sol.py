@@ -1,3 +1,6 @@
+from treenode import TreeNode
+
+
 def maximum_depth(root: TreeNode) -> int:
     # 빈 노드의 경우 0을 반환한다.
     if not root:

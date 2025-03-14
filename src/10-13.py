@@ -1,3 +1,6 @@
+from treenode import TreeNode
+
+
 class SegmentTreeNode(object):
     def __init__(self, val, start, end):
         self.val = val

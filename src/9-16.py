@@ -1,3 +1,6 @@
+from treenode import TreeNode
+
+
 class Solution:
     def maxPathSum(self, root: "TreeNode") -> int:
         best_sum = -float("inf")  # 최대 경로합 기록 변수

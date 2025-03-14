@@ -1,3 +1,6 @@
+from treenode import TreeNode
+
+
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> list[int]:
         curr = root

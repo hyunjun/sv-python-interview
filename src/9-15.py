@@ -1,3 +1,6 @@
+from treenode import TreeNode
+
+
 class Codec:
     def dfs(self, s):
         first = s.pop(0)
