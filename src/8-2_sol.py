@@ -1,3 +1,6 @@
+from listnode import ListNode
+
+
 class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         slow = head

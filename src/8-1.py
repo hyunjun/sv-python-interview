@@ -1,3 +1,6 @@
+from listnode import ListNode
+
+
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         def fn(node):  # 문자열을 숫자로 변환하는 함수 정의

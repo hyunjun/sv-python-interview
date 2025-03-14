@@ -1,3 +1,6 @@
+from listnode import ListNode
+
+
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         def size(head: ListNode):

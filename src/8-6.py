@@ -1,3 +1,6 @@
+from listnode import ListNode
+
+
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         node, prev = head, None
