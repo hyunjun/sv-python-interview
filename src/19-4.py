@@ -1,11 +1,7 @@
 import math
 
 
-class Circle:
-    def __init__(self, x, y, r):
-        self.x = x
-        self.y = y
-        self.r = r
+from circle import Circle
 
 
 # DFS 알고리즘을 사용하는 솔루션
