@@ -9,8 +9,8 @@ class PagesDataStore(object):
     def remove_link_to_crawl(self, url):
         """links_to_crawl에서 해당 링크를 제거한다."""
 
-    def reduce_priority_link_to_crawl(self, url)
-    """루프를 방지하기 위해 link_to_crawl의 링크 우선순위를 낮춘다."""
+    def reduce_priority_link_to_crawl(self, url):
+        """루프를 방지하기 위해 link_to_crawl의 링크 우선순위를 낮춘다."""
 
     def extract_max_priority_page(self):
         """link_to_crawl에서 우선순위가 가장 높은 링크를 반환한다."""

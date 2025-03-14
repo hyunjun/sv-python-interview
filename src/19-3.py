@@ -7,7 +7,7 @@ def chain_from_add(self, word, all_words, chain_length, cache):
     for i in range(len(word) + 1):
         # 각 글자 추가
         for a in string.ascii_lowercase:
-        new_word = word[:i] + a + word[i:]
+            new_word = word[:i] + a + word[i:]
         # 현재 생성된 단어가 사전에 있는지 확인
         if new_word in all_words:
             # 깊이 탐색
